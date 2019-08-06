@@ -6,7 +6,7 @@ public class BasePresenter<BaseView extends IBaseView> {
     public BasePresenter(BaseView baseView) {
         this.baseView = baseView;
     }
-    private void onDestory(){
+    public void onDestory(){
         if (baseView!=null) {
             baseView=null;
         }
